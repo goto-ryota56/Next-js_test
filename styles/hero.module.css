@@ -1,4 +1,7 @@
 @charset "utf-8";
+.flexContainer {
+    composes: sideBySideCenter from "styles/utils.module.css";
+}
 
 .text {
     padding: calc(var(--display) * 0.5) 0 calc(var(--display) * 0.7);

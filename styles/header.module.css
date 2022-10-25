@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+.flexContainer {
+    composes: spaceBetween from "styles/utils.module.css";
+}
+
