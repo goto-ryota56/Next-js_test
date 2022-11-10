@@ -1,11 +1,12 @@
 import { getPostBySlug } from "lib/api";
 import Container from "components/container";
 import PostHeader from "components/post-header";
-import Image from "next/image";
 
 import postBody from "components/post.body";
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "components/two-column";
 import ConvertBody from "components/convert-body";
+import PostCategories from "components/post-categories";
+import Image from "next/image";
 
 export default function Schedule({ title, publish, content, eyecatch, categories }) {
     return (
@@ -23,7 +24,9 @@ export default function Schedule({ title, publish, content, eyecatch, categories
                             <ConvertBody contentHTML={content} />
                         </postBody>
                     </TwoColumnMain>
-                    <TwoColumnSidebar></TwoColumnSidebar>
+                    <TwoColumnSidebar>
+                        <PostCategories categories={categories} />
+                    </TwoColumnSidebar>
                 </TwoColumn>
             </article>
         </Container>
