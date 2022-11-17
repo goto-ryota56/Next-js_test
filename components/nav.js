@@ -7,7 +7,7 @@ export default function Nav() {
             <ul className={styles.list}>
                 <li>
                     <Link href='/'>
-                        <a>Home</a>
+                        <a>Home1</a>
                     </Link>
                 </li>
                 <li>
